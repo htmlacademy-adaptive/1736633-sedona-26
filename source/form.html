@@ -8,22 +8,22 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+          <ul class="main-header__list">
+            <li class="main-header__item main-header__item--active">
               <a href="">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-header__item">
               <a href="">Фото и видео</a>
             </li>
           </ul>
           <a class="main-header__logo" href="#">
             <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
           </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+          <ul class="main-header__list">
+            <li class="main-header__item">
               <a href="">Форма отзыва</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-header__item">
               <a href="">Html Academy</a>
             </li>
           </ul>
@@ -33,103 +33,103 @@
         </button>
       </div>
     </header>
-    <main class="form-content">
-      <section class="page-intro form-content__intro">
+    <main>
+      <section class="page-intro">
         <img class="page-intro__name" src="img/intro-text-sedona.svg" alt="Седона">
         <span class="page-intro__triangle"></span>
       </section>
-      <section class="form-content__form">
+      <section class="form">
         <div class="form__heading">
           <p class="form__heading-name">Оставьте свой отзыв</p>
           <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form class="form__main-request" action="#" method="get">
-          <div class="main-request__input-block">
-            <div class="input-block_acquaintance">
-              <p class="acquaintance__heading">Представьтесь:</p>
-              <div class="acquaintance__input-field">
+        <form class="form__main" action="#" method="get">
+          <div class="form__input-block">
+            <div class="form__input-acquaintance">
+              <p class="form__input-heading">Представьтесь:</p>
+              <div class="form__input-field input-field">
                 <label class="input-field__name">
                   Имя*:
                   <input class="input-field__text" type="text" name="name">
                 </label>
               </div>
-              <div class="acquaintance__input-field">
+              <div class="form__input-field input-field">
                 <label class="input-field__name">
                   Фамилия*:
                   <input class="input-field__text" type="text" name="surname">
                 </label>
               </div>
-              <div class="acquaintance__input-field">
+              <div class="form__input-field input-field">
                 <label class="input-field__name">
                   Отчество:
                   <input class="input-field__text" type="text" name="patronymic">
                 </label>
               </div>
             </div>
-            <span class="input__vertical-line"></span>
-            <div class="input-block_contact">
-              <p class="contact__heading">Контактная информация:</p>
-              <div class="contact__input-field">
+            <span class="form__input-line"></span>
+            <div class="form__input-contact">
+              <p class="form__input-heading">Контактная информация:</p>
+              <div class="form__input-field input-field">
                 <label class="input-field__name">
                   Контактный телефон*:
                   <input class="input-field__text" type="text" name="tel" placeholder="Введите телефон">
-                  <span class="input-field__icon input-field__icon--tel"></span>
+                  <span class="input-field__icon input-field__icon-tel"></span>
                 </label>
               </div>
-              <div class="contact__input-field">
+              <div class="form__input-field input-field">
                 <label class="input-field__name">
                   Электронная почта*:
                   <input class="input-field__text" type="text" name="email" placeholder="Введите email">
-                  <span class="input-field__icon input-field__icon--email"></span>
+                  <span class="input-field__icon input-field__icon-email"></span>
                 </label>
               </div>
             </div>
           </div>
-          <div class="main-request__radio-block">
-            <p class="radio-block__heading">Ваше Общее впечатление:</p>
-            <div class="radio-block__radio-list">
-              <label class="radio-list__item">
-                <input class="radio-list__input" type="radio" name="impression">
+          <div class="form__radio-block">
+            <p class="form__radio-heading">Ваше Общее впечатление:</p>
+            <div class="form__radio-list">
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
                 Скорее положительное
               </label>
-              <label class="radio-list__item">
-                <input class="radio-list__input" type="radio" name="impression">
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
                 Скорее отрицательное
               </label>
-              <label class="radio-list__item">
-                <input class="radio-list__input" type="radio" name="impression">
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
                 Затрудняюсь ответить
               </label>
             </div>
           </div>
-          <div class="main-request__checkbox-block">
-            <p class="checkbox-block__heading">Посещенные достопримечательности:</p>
-            <div class="checkbox-block__checkbox-list">
-              <label class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="bridge" checked>
+          <div class="form__checkbox-block">
+            <p class="form__checkbox-heading">Посещенные достопримечательности:</p>
+            <div class="form__checkbox-list">
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="bridge" checked>
                 Мост Дьявола
               </label>
-              <label class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="mount" checked>
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="mount" checked>
                 Гора-Колокол
               </label>
-              <label class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="park" checked>
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="park" checked>
                 Слайд-парк
               </label>
-              <label class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="roke">
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="roke">
                 Красные скалы
               </label>
             </div>
           </div>
-          <div class="main-request__emotions">
-            <p class="emotions__heading">Опишите свои эмоции:</p>
-            <input class="emotions__text-block" type="text" placeholder="Опишите подробно все свои восторги">
+          <div class="form__emotions">
+            <p class="form__emotions-heading">Опишите свои эмоции:</p>
+            <input class="form__emotions-text" type="text" placeholder="Опишите подробно все свои восторги">
           </div>
-          <div class="main-request__submit-block">
-            <input class="submit-block__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
-            <p class="submit-block__remark">* — обязательные поля</p>
+          <div class="form__submit-block">
+            <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+            <p class="form__submit-remark">* — обязательные поля</p>
           </div>
         </form>
       </section>
@@ -138,22 +138,22 @@
       <div class="footer__wrapper">
         <p class="footer__hashtag"></p>
         <ul class="footer__social">
-          <li class="social__item">
-            <a class="social__item--link social__vk-icon" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link social__vk-icon" href="#">
               <span class="visually-hidden">
                 Ссылка ВК
               </span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__item--link social__telegram-icon" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link social__telegram-icon" href="#">
               <span class="visually-hidden">
                 Ссылка телеграм
               </span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__item--link social__youtube-icon" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link social__youtube-icon" href="#">
               <span class="visually-hidden">
                 Ссылка ютуб
               </span>
@@ -161,8 +161,8 @@
           </li>
         </ul>
         <div class="footer__made-in">
-          <p class="made-in__text">Разработно</p>
-          <img class="made-in__icon" src="img/htmlacademy-logo.svg" alt="HTML Academy">
+          <p class="footer__made-in-text">Разработно</p>
+          <img class="footer__made-in-icon" src="img/htmlacademy-logo.svg" alt="HTML Academy">
         </div>
       </div>
     </footer>
