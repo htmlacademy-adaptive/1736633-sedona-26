@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav">
+          <ul class="main-header__list">
+            <li class="main-header__item main-header__item--active">
+              <a href="">Главная</a>
+            </li>
+            <li class="main-header__item">
+              <a href="">Фото и видео</a>
+            </li>
+          </ul>
+          <a class="main-header__logo" href="#">
+            <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
+          </a>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a href="">Форма отзыва</a>
+            </li>
+            <li class="main-header__item">
+              <a href="">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-header__toggle">
+          <span class="visually-hidden">Кнопка бургер</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="page-intro">
+        <img class="page-intro__name" src="img/intro-text-sedona.svg" alt="Седона">
+      </section>
+      <section class="form">
+        <div class="form__heading">
+          <p class="form__heading-name">Оставьте свой отзыв</p>
+          <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="form__main" action="#" method="get">
+          <div class="form__input-block">
+            <div class="form__input-acquaintance">
+              <p class="form__input-heading">Представьтесь:</p>
+                <label class="form__field-name">
+                  Имя*:
+                  <input class="form__field-text" type="text" name="name">
+                </label>
+                <label class="form__field-name">
+                  Фамилия*:
+                  <input class="form__field-text" type="text" name="surname">
+                </label>
+                <label class="form__field-name">
+                  Отчество:
+                  <input class="form__field-text" type="text" name="patronymic">
+                </label>
+            </div>
+            <span class="form__input-line"></span>
+            <div class="form__input-contact">
+              <p class="form__input-heading">Контактная информация:</p>
+                <label class="form__field-name">
+                  Контактный телефон*:
+                  <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
+                  <span class="form__field-icon form__field-icon-tel"></span>
+                </label>
+                <label class="form__field-name">
+                  Электронная почта*:
+                  <input class="form__field-text" type="text" name="email" placeholder="Введите email">
+                  <span class="form__field-icon form__field-icon-email"></span>
+                </label>
+            </div>
+          </div>
+          <div class="form__radio-block">
+            <p class="form__radio-heading">Ваше Общее впечатление:</p>
+            <div class="form__radio-list">
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
+                Скорее положительное
+              </label>
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
+                Скорее отрицательное
+              </label>
+              <label class="form__radio-item">
+                <input class="form__radio-item-input" type="radio" name="impression">
+                Затрудняюсь ответить
+              </label>
+            </div>
+          </div>
+          <div class="form__checkbox-block">
+            <p class="form__checkbox-heading">Посещенные достопримечательности:</p>
+            <div class="form__checkbox-list">
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="bridge" checked>
+                Мост Дьявола
+              </label>
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="mount" checked>
+                Гора-Колокол
+              </label>
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="park" checked>
+                Слайд-парк
+              </label>
+              <label class="form__checkbox-item">
+                <input class="form__checkbox-item-input" type="checkbox" name="roke">
+                Красные скалы
+              </label>
+            </div>
+          </div>
+          <div class="form__emotions">
+            <p class="form__emotions-heading">Опишите свои эмоции:</p>
+            <input class="form__emotions-text" type="text" placeholder="Опишите подробно все свои восторги">
+          </div>
+          <div class="form__submit-block">
+            <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+            <p class="form__submit-remark">* — обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__hashtag">#visitsedona</p>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link-vk" href="#">
+              <span class="visually-hidden">
+                Ссылка ВК
+              </span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link-telegram" href="#">
+              <span class="visually-hidden">
+                Ссылка телеграм
+              </span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link-youtube" href="#">
+              <span class="visually-hidden">
+                Ссылка ютуб
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__made-in">
+          <p class="footer__made-in-text">Разработно</p>
+        </div>
+    </footer>
+    <div class="modal-failure">
+      <div class="modal-failure__wrapper">
+        <p class="modal-failure__heading">Что-то пошлоне так!</p>
+        <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-failure__submit">Ок</button>
+      </div>
+    </div>
+    <div class="modal-success">
+      <div class="modal-success__wrapper">
+        <p class="modal-success__heading">Ваш отзыв отправлен!</p>
+        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-success__grey-background">
+      <div class="modal-success__wrapper">
+        <button class="modal-success__submit">Закрыть окно</button>
+      </div>
+    </div>
+    </div>
+  </body>
+  </html>
