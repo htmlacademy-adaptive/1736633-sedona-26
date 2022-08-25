@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,11 +16,11 @@
             <li class="main-header__item">
               <a href="">Фото и видео</a>
             </li>
-          </ul>
-          <a class="main-header__logo" href="#">
-            <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
-          </a>
-          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__logo" href="#">
+                <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
+              </a>
+            </li>
             <li class="main-header__item">
               <a href="">Форма отзыва</a>
             </li>
@@ -33,7 +34,8 @@
         </button>
       </div>
     </header>
-    <main>
+    <main class="form-page">
+      <div class="form-page__wrapper">
       <section class="page-intro">
         <img class="page-intro__name" src="img/intro-text-sedona.svg" alt="Седона">
       </section>
@@ -48,15 +50,15 @@
               <p class="form__input-heading">Представьтесь:</p>
                 <label class="form__field-name">
                   Имя*:
-                  <input class="form__field-text" type="text" name="name">
+                  <input class="form__field-text" type="text" name="name" value="Пётр">
                 </label>
                 <label class="form__field-name">
                   Фамилия*:
-                  <input class="form__field-text" type="text" name="surname">
+                  <input class="form__field-text" type="text" name="surname" value="Пустота">
                 </label>
                 <label class="form__field-name">
                   Отчество:
-                  <input class="form__field-text" type="text" name="patronymic">
+                  <input class="form__field-text" type="text" name="patronymic" value="Викторович">
                 </label>
             </div>
             <span class="form__input-line"></span>
@@ -69,7 +71,7 @@
                 </label>
                 <label class="form__field-name">
                   Электронная почта*:
-                  <input class="form__field-text" type="text" name="email" placeholder="Введите email">
+                  <input class="form__field-text" type="text" name="email" placeholder="Введите e-mail">
                   <span class="form__field-icon form__field-icon-email"></span>
                 </label>
             </div>
@@ -78,7 +80,7 @@
             <p class="form__radio-heading">Ваше Общее впечатление:</p>
             <div class="form__radio-list">
               <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+                <input class="form__radio-item-input" type="radio" name="impression" checked>
                 Скорее положительное
               </label>
               <label class="form__radio-item">
@@ -122,6 +124,7 @@
           </div>
         </form>
       </section>
+    </div>
     </main>
     <footer class="footer">
         <p class="footer__hashtag">#visitsedona</p>
@@ -152,22 +155,22 @@
           <p class="footer__made-in-text">Разработно</p>
         </div>
     </footer>
-    <div class="modal-failure">
+    <div class="modal-failure modal-failure-close">
       <div class="modal-failure__wrapper">
         <p class="modal-failure__heading">Что-то пошлоне так!</p>
         <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal-failure__submit">Ок</button>
       </div>
     </div>
-    <div class="modal-success">
+    <div class="modal-success modal-success-close">
       <div class="modal-success__wrapper">
-        <p class="modal-success__heading">Ваш отзыв отправлен!</p>
-        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      </div>
-      <div class="modal-success__grey-background">
-      <div class="modal-success__wrapper">
-        <button class="modal-success__submit">Закрыть окно</button>
-      </div>
+        <div class="modal-success__white-background">
+          <p class="modal-success__heading">Ваш отзыв отправлен!</p>
+          <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+         <div class="modal-success__grey-background">
+          <button class="modal-success__submit">Закрыть окно</button>
+        </div>
     </div>
     </div>
   </body>

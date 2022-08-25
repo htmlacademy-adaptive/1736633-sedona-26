@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,11 +16,11 @@
             <li class="main-header__item">
               <a href="">Фото и видео</a>
             </li>
-          </ul>
-          <a class="main-header__logo" href="#">
-            <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
-          </a>
-          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__logo" href="#">
+                <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
+              </a>
+            </li>
             <li class="main-header__item">
               <a href="">Форма отзыва</a>
             </li>
@@ -35,10 +36,10 @@
     </header>
     <main class="catalog-content">
       <h1 class="visually-hidden">Фото и видео Седоны</h1>
+      <div class="catalog-content__wrapper">
         <section class="page-intro">
           <img class="page-intro__name" src="img/intro-text-sedona.svg" alt="Седона">
         </section>
-        <div class="catalog-content__wrapper">
         <section class="catalog-photo">
           <div class="catalog-photo__slogan">
             <h2 class="catalog-photo__slogan-definition">Фото и видео</h2>
@@ -53,20 +54,18 @@
                     <p class="catalog-item__description-heading-author">Автор фото: Борис</p>
                   </div>
                   <div class="catalog-item__like like-counter">
-                    <span class="like-counter__icon"></span>
                     <p class="like-counter__count">1350</p>
                   </div>
                 </div>
               </li>
               <li class="catalog-photo__content-item catalog-item">
                 <img class="catalog-item__image" src="img/catalog-content-2.jpg" alt="Местная растительность">
-                <div class="image-description">
-                  <div class="catalog-item__description">
+                <div class="catalog-item__description">
+                  <div class="catalog-item__description-heading">
                     <h3 class="catalog-item__description-heading-name">Местная растительность</h3>
                     <p class="catalog-item__description-heading-author">Автор фото: Сергей</p>
                   </div>
                   <div class="catalog-item__like like-counter">
-                    <span class="like-counter__icon"></span>
                     <p class="like-counter__count">143</p>
                   </div>
                 </div>
@@ -105,7 +104,7 @@
             <p class="video__heading-slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__block">
-            <video class="video__block-movie" src="#"></video>
+            <video class="video__block-movie" poster="img/video-desktop.jpg" src="#"></video>
           </div>
         </section>
       </div>
