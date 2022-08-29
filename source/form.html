@@ -11,10 +11,10 @@
         <nav class="main-header__nav">
           <ul class="main-header__list">
             <li class="main-header__item main-header__item--active">
-              <a href="">Главная</a>
+              <a class="main-header__link" href="#">Главная</a>
             </li>
             <li class="main-header__item">
-              <a href="">Фото и видео</a>
+              <a class="main-header__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-header__item">
               <a class="main-header__logo" href="#">
@@ -22,10 +22,10 @@
               </a>
             </li>
             <li class="main-header__item">
-              <a href="">Форма отзыва</a>
+              <a class="main-header__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-header__item">
-              <a href="">Html Academy</a>
+              <a class="main-header__link" href="#">Html Academy</a>
             </li>
           </ul>
         </nav>
@@ -76,40 +76,40 @@
                 </label>
             </div>
           </div>
-          <div class="form__radio-block">
-            <p class="form__radio-heading">Ваше Общее впечатление:</p>
-            <div class="form__radio-list">
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression" checked>
+          <div class="form__radio-block radio-block">
+            <p class="radio-block__heading">Ваше Общее впечатление:</p>
+            <div class="radio-block__list">
+              <label class="radio-block__item">
+                <input class="radio-block__item-input" type="radio" name="impression" checked>
                 Скорее положительное
               </label>
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+              <label class="radio-block__item">
+                <input class="radio-block__item-input" type="radio" name="impression">
                 Скорее отрицательное
               </label>
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+              <label class="radio-block__item">
+                <input class="radio-block__input" type="radio" name="impression">
                 Затрудняюсь ответить
               </label>
             </div>
           </div>
-          <div class="form__checkbox-block">
-            <p class="form__checkbox-heading">Посещенные достопримечательности:</p>
-            <div class="form__checkbox-list">
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="bridge" checked>
+          <div class="form__checkbox-block checkbox-block">
+            <p class="checkbox-block__heading">Посещенные достопримечательности:</p>
+            <div class="checkbox-block__list">
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="bridge" checked>
                 Мост Дьявола
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="mount" checked>
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="mount" checked>
                 Гора-Колокол
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="park" checked>
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="park" checked>
                 Слайд-парк
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="roke">
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="roke">
                 Красные скалы
               </label>
             </div>
@@ -155,14 +155,14 @@
           <p class="footer__made-in-text">Разработно</p>
         </div>
     </footer>
-    <div class="modal-failure modal-failure-close">
+    <div class="modal-failure modal-failure__close">
       <div class="modal-failure__wrapper">
         <p class="modal-failure__heading">Что-то пошлоне так!</p>
         <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal-failure__submit">Ок</button>
       </div>
     </div>
-    <div class="modal-success modal-success-close">
+    <div class="modal-success modal-success__close">
       <div class="modal-success__wrapper">
         <div class="modal-success__white-background">
           <p class="modal-success__heading">Ваш отзыв отправлен!</p>
