@@ -1,30 +1,36 @@
-.main-header {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+.main-header__nav {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &--close {
+    display: none;
+  }
 }
 
 .main-header__wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.main-header__list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  justify-content: center;
+  height: 56px;
+  z-index: 10;
 }
 
-.main-header__item {
-  width: 20%;
-}
+@media (min-width: 768px) {
+  .main-header__nav {
+    position: relative;
 
-.main-header__link {
-  text-decoration: none;
-  color: @black-text;
-  text-transform: uppercase;
+    &--close {
+      display: flex;
+    }
+  }
+
+  .main-header__logo {
+    display: none;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
 }

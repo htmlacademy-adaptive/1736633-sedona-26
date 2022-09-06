@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,24 +11,27 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-header__nav">
-        <ul class="main-header__list">
-          <li class="main-header__item main-header__item--active">
-            <a class="main-header__link" href="#">Главная</a>
+      <a class="main-header__logo" href="#">
+        <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
+      </a>
+      <nav class="main-header__nav main-header__nav--close">
+        <ul class="nav-block">
+          <li class="nav-block__item nav-block__item--active">
+            <a class="nav-block__link" href="#">Главная</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="catalog.html">Фото и видео</a>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__logo" href="#">
+          <li class="nav-block__item nav-block__item--logo">
+            <a class="nav-block__link nav-block__link--nav" href="#">
               <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
             </a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="form.html">Форма отзыва</a>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="#">Html Academy</a>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="#">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -38,10 +42,9 @@
   </header>
   <main class="main-content">
     <h1 class="visually-hidden">Главная страницы</h1>
-    <div class="main-content__wrapper">
-      <section class="index-intro">
+      <div class="index-intro">
         <h2 class="visually-hidden">Welcome to Sedona</h2>
-      </section>
+      </div>
       <section class="index-content">
         <div class="index-content__slogan">
           <h2 class="index-content__slogan-definition">
@@ -132,23 +135,22 @@
       <section class="map-block">
         <h2 class="visually-hidden">Карта седоны</h2>
       </section>
-    </div>
   </main>
   <footer class="footer">
     <p class="footer__hashtag">#visitsedona</p>
-    <ul class="footer__social">
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--vk" href="#">
+    <ul class="social-networks">
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--vk" href="#">
           <span class="visually-hidden"> Ссылка ВК </span>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--telegram" href="#">
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--telegram" href="#">
           <span class="visually-hidden"> Ссылка телеграм </span>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--youtube" href="#">
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--youtube" href="#">
           <span class="visually-hidden"> Ссылка ютуб </span>
         </a>
       </li>
