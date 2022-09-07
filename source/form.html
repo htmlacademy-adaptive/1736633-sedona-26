@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <nav class="main-header__nav">
-          <ul class="main-header__list">
-            <li class="main-header__item main-header__item--active">
-              <a href="">Главная</a>
-            </li>
-            <li class="main-header__item">
-              <a href="">Фото и видео</a>
-            </li>
-          </ul>
-          <a class="main-header__logo" href="#">
-            <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
-          </a>
-          <ul class="main-header__list">
-            <li class="main-header__item">
-              <a href="">Форма отзыва</a>
-            </li>
-            <li class="main-header__item">
-              <a href="">Html Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="main-header__toggle">
-          <span class="visually-hidden">Кнопка бургер</span>
-        </button>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-header__nav">
+        <ul class="nav-block">
+          <li class="nav-block__item nav-block__item--active">
+            <a class="nav-block__link" href="#">Главная</a>
+          </li>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="nav-block__item nav-block__item--logo">
+            <a class="nav-block__link nav-block__link--nav" href="#">
+              <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
+            </a>
+          </li>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="main-header__toggle">
+        <span class="visually-hidden">Кнопка бургер</span>
+      </button>
+    </div>
+  </header>
+  <main class="form-page">
+    <div class="form-page__wrapper">
+      <div class="page-intro">
+        <span class="visually-hidden">Интро седона</span>
       </div>
-    </header>
-    <main>
-      <section class="page-intro">
-        <img class="page-intro__name" src="img/intro-text-sedona.svg" alt="Седона">
-      </section>
       <section class="form">
         <div class="form__heading">
           <p class="form__heading-name">Оставьте свой отзыв</p>
-          <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами достопримечательностях</p>
         </div>
         <form class="form__main" action="#" method="get">
           <div class="form__input-block">
             <div class="form__input-acquaintance">
               <p class="form__input-heading">Представьтесь:</p>
-                <label class="form__field-name">
-                  Имя*:
-                  <input class="form__field-text" type="text" name="name">
-                </label>
-                <label class="form__field-name">
-                  Фамилия*:
-                  <input class="form__field-text" type="text" name="surname">
-                </label>
-                <label class="form__field-name">
-                  Отчество:
-                  <input class="form__field-text" type="text" name="patronymic">
-                </label>
+              <label class="form__field-name">
+                Имя*:
+                <input class="form__field-text" type="text" name="name" value="Пётр">
+              </label>
+              <label class="form__field-name">
+                Фамилия*:
+                <input class="form__field-text" type="text" name="surname" value="Пустота">
+              </label>
+              <label class="form__field-name">
+                Отчество:
+                <input class="form__field-text" type="text" name="patronymic" value="Викторович">
+              </label>
             </div>
             <span class="form__input-line"></span>
             <div class="form__input-contact">
               <p class="form__input-heading">Контактная информация:</p>
-                <label class="form__field-name">
-                  Контактный телефон*:
-                  <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
-                  <span class="form__field-icon form__field-icon-tel"></span>
-                </label>
-                <label class="form__field-name">
-                  Электронная почта*:
-                  <input class="form__field-text" type="text" name="email" placeholder="Введите email">
-                  <span class="form__field-icon form__field-icon-email"></span>
-                </label>
+              <label class="form__field-name">
+                Контактный телефон*:
+                <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
+                <span class="form__field-icon form__field-icon-tel"></span>
+              </label>
+              <label class="form__field-name">
+                Электронная почта*:
+                <input class="form__field-text" type="text" name="email" placeholder="Введите e-mail">
+                <span class="form__field-icon form__field-icon-email"></span>
+              </label>
             </div>
           </div>
-          <div class="form__radio-block">
-            <p class="form__radio-heading">Ваше Общее впечатление:</p>
-            <div class="form__radio-list">
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+          <div class="form__radio-block radio-block">
+            <p class="radio-block__heading">Ваше Общее впечатление:</p>
+            <div class="radio-block__list">
+              <label class="radio-block__item">
+                <input class="radio-block__item-input" type="radio" name="impression" checked>
                 Скорее положительное
               </label>
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+              <label class="radio-block__item">
+                <input class="radio-block__item-input" type="radio" name="impression">
                 Скорее отрицательное
               </label>
-              <label class="form__radio-item">
-                <input class="form__radio-item-input" type="radio" name="impression">
+              <label class="radio-block__item">
+                <input class="radio-block__input" type="radio" name="impression">
                 Затрудняюсь ответить
               </label>
             </div>
           </div>
-          <div class="form__checkbox-block">
-            <p class="form__checkbox-heading">Посещенные достопримечательности:</p>
-            <div class="form__checkbox-list">
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="bridge" checked>
+          <div class="form__checkbox-block checkbox-block">
+            <p class="checkbox-block__heading">Посещенные достопримечательности:</p>
+            <div class="checkbox-block__list">
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="bridge" checked>
                 Мост Дьявола
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="mount" checked>
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="mount" checked>
                 Гора-Колокол
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="park" checked>
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="park" checked>
                 Слайд-парк
               </label>
-              <label class="form__checkbox-item">
-                <input class="form__checkbox-item-input" type="checkbox" name="roke">
+              <label class="checkbox-block__item">
+                <input class="checkbox-block__item-input" type="checkbox" name="roke">
                 Красные скалы
               </label>
             </div>
@@ -122,53 +127,50 @@
           </div>
         </form>
       </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__hashtag">#visitsedona</p>
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="footer__social-link social-link-vk" href="#">
-              <span class="visually-hidden">
-                Ссылка ВК
-              </span>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link social-link-telegram" href="#">
-              <span class="visually-hidden">
-                Ссылка телеграм
-              </span>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link social-link-youtube" href="#">
-              <span class="visually-hidden">
-                Ссылка ютуб
-              </span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__made-in">
-          <p class="footer__made-in-text">Разработно</p>
-        </div>
-    </footer>
-    <div class="modal-failure">
-      <div class="modal-failure__wrapper">
-        <p class="modal-failure__heading">Что-то пошлоне так!</p>
-        <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-failure__submit">Ок</button>
-      </div>
     </div>
-    <div class="modal-success">
-      <div class="modal-success__wrapper">
+  </main>
+  <footer class="footer">
+    <p class="footer__hashtag">#visitsedona</p>
+    <ul class="social-networks">
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--vk" href="#">
+          <span class="visually-hidden"> Ссылка ВК </span>
+        </a>
+      </li>
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--telegram" href="#">
+          <span class="visually-hidden"> Ссылка телеграм </span>
+        </a>
+      </li>
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--youtube" href="#">
+          <span class="visually-hidden"> Ссылка ютуб </span>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__made-in">
+      <p class="footer__made-in-text">Разработно</p>
+    </div>
+  </footer>
+  <div class="modal-failure modal-failure__close">
+    <div class="modal-failure__wrapper">
+      <p class="modal-failure__heading">Что-то пошлоне так!</p>
+      <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-failure__submit">Ок</button>
+    </div>
+  </div>
+  <div class="modal-success modal-success__close">
+    <div class="modal-success__wrapper">
+      <div class="modal-success__white-background">
         <p class="modal-success__heading">Ваш отзыв отправлен!</p>
-        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          опубликуем его на сайте.</p>
       </div>
       <div class="modal-success__grey-background">
-      <div class="modal-success__wrapper">
         <button class="modal-success__submit">Закрыть окно</button>
       </div>
     </div>
-    </div>
-  </body>
-  </html>
+  </div>
+</body>
+
+</html>

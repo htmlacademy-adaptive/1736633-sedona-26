@@ -1,0 +1,36 @@
+.main-header__nav {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &--close {
+    display: none;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .main-header__nav {
+    position: relative;
+
+    &--close {
+      display: flex;
+    }
+  }
+
+  .main-header__logo {
+    display: none;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
