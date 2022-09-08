@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,10 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-header__nav">
+      <a class="main-header__logo" href="#">
+        <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
+      </a>
+      <nav class="main-header__nav main-header__nav--close">
         <ul class="nav-block">
           <li class="nav-block__item nav-block__item--active">
             <a class="nav-block__link" href="#">Главная</a>
@@ -37,7 +41,6 @@
     </div>
   </header>
   <main class="form-page">
-    <div class="form-page__wrapper">
       <div class="page-intro">
         <span class="visually-hidden">Интро седона</span>
       </div>
@@ -51,6 +54,7 @@
           <div class="form__input-block">
             <div class="form__input-acquaintance">
               <p class="form__input-heading">Представьтесь:</p>
+              <div class="form__field-block">
               <label class="form__field-name">
                 Имя*:
                 <input class="form__field-text" type="text" name="name" value="Пётр">
@@ -64,9 +68,10 @@
                 <input class="form__field-text" type="text" name="patronymic" value="Викторович">
               </label>
             </div>
-            <span class="form__input-line"></span>
+            </div>
             <div class="form__input-contact">
               <p class="form__input-heading">Контактная информация:</p>
+              <div class="form__field-block">
               <label class="form__field-name">
                 Контактный телефон*:
                 <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
@@ -77,6 +82,7 @@
                 <input class="form__field-text" type="text" name="email" placeholder="Введите e-mail">
                 <span class="form__field-icon form__field-icon-email"></span>
               </label>
+              </div>
             </div>
           </div>
           <div class="form__radio-block radio-block">
@@ -127,7 +133,6 @@
           </div>
         </form>
       </section>
-    </div>
   </main>
   <footer class="footer">
     <p class="footer__hashtag">#visitsedona</p>

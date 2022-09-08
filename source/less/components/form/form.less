@@ -1,9 +1,27 @@
+.form {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 120px);
+  }
+}
+
+.form__heading {
+  text-align: center;
+}
+
 .form__heading-name {
   font-family: @PT-Sans;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .form__heading-text {
@@ -16,10 +34,26 @@
 
 .form__input-heading {
   font-family: @PT-Sans;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+}
+
+.form__input-block {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__field-block {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__field-name {
@@ -28,6 +62,8 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__field-text {
@@ -41,19 +77,38 @@
 
 .form__emotions-heading {
   font-family: @PT-Sans;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 .form__emotions-text {
+  display: block;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
   font-family: @PT-Sans;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   background-color: @input-bg;
   border: 0;
+}
+
+.form__submit-block {
+  max-width: 768px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__submit-button {

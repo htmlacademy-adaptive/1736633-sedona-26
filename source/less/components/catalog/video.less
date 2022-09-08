@@ -1,9 +1,27 @@
+.video {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 120px);
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
 .video__heading-name {
   font-family: @PT-Sans;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .video__heading-slogan {
@@ -12,4 +30,22 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.video__block {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/play-button.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    width: 48px;
+    height: 54px;
+  }
+}
+
+.video__block-movie {
+  width: 100%;
+  object-fit: cover;
 }

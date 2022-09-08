@@ -1,8 +1,22 @@
+.search-block {
+  text-align: center;
+  padding: 0 18px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
 .search-block__heading {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .search-block__text {
@@ -10,6 +24,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .search-block__button {
@@ -18,7 +33,6 @@
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
-  padding: 15px 121px 18px 121px;
   background-color: @button-blue;
   text-transform: uppercase;
   text-decoration: none;

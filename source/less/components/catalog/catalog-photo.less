@@ -1,9 +1,31 @@
+.catalog-photo {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 120px);
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.catalog-photo__slogan {
+  text-align: center;
+}
+
 .catalog-photo__slogan-definition {
   font-family: @PT-Sans;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .catalog-photo__slogan-description {

@@ -2,9 +2,29 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item {
+  display: block;
+
+  @media (min-width: 768px) {
+    &--picture {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
 }
 
 .advantages__image {
   width: 100%;
+  height: 260px;
   object-fit: cover;
 }
