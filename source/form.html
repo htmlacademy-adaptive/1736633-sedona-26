@@ -41,20 +41,20 @@
     </div>
   </header>
   <main class="form-page">
-      <div class="page-intro">
-        <span class="visually-hidden">Интро седона</span>
+    <div class="page-intro">
+      <span class="visually-hidden">Интро седона</span>
+    </div>
+    <section class="form">
+      <div class="form__heading">
+        <p class="form__heading-name">Оставьте свой отзыв</p>
+        <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами достопримечательностях</p>
       </div>
-      <section class="form">
-        <div class="form__heading">
-          <p class="form__heading-name">Оставьте свой отзыв</p>
-          <p class="form__heading-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-            вами достопримечательностях</p>
-        </div>
-        <form class="form__main" action="#" method="get">
-          <div class="form__input-block">
-            <div class="form__input-acquaintance">
-              <p class="form__input-heading">Представьтесь:</p>
-              <div class="form__field-block">
+      <form class="form__main" action="#" method="get">
+        <div class="form__input-block">
+          <div class="form__input-acquaintance">
+            <p class="form__input-heading">Представьтесь:</p>
+            <div class="form__field-block">
               <label class="form__field-name">
                 Имя*:
                 <input class="form__field-text" type="text" name="name" value="Пётр">
@@ -68,10 +68,10 @@
                 <input class="form__field-text" type="text" name="patronymic" value="Викторович">
               </label>
             </div>
-            </div>
-            <div class="form__input-contact">
-              <p class="form__input-heading">Контактная информация:</p>
-              <div class="form__field-block">
+          </div>
+          <div class="form__input-contact">
+            <p class="form__input-heading">Контактная информация:</p>
+            <div class="form__field-block">
               <label class="form__field-name">
                 Контактный телефон*:
                 <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
@@ -82,57 +82,57 @@
                 <input class="form__field-text" type="text" name="email" placeholder="Введите e-mail">
                 <span class="form__field-icon form__field-icon-email"></span>
               </label>
-              </div>
             </div>
           </div>
-          <div class="form__radio-block radio-block">
-            <p class="radio-block__heading">Ваше Общее впечатление:</p>
-            <div class="radio-block__list">
-              <label class="radio-block__item">
-                <input class="radio-block__item-input" type="radio" name="impression" checked>
-                Скорее положительное
-              </label>
-              <label class="radio-block__item">
-                <input class="radio-block__item-input" type="radio" name="impression">
-                Скорее отрицательное
-              </label>
-              <label class="radio-block__item">
-                <input class="radio-block__input" type="radio" name="impression">
-                Затрудняюсь ответить
-              </label>
-            </div>
+        </div>
+        <div class="form__radio-block radio-block">
+          <p class="radio-block__heading">Ваше Общее впечатление:</p>
+          <div class="radio-block__list">
+            <label class="radio-block__item">
+              <input class="radio-block__item-input" type="radio" name="impression" checked>
+              Скорее положительное
+            </label>
+            <label class="radio-block__item">
+              <input class="radio-block__item-input" type="radio" name="impression">
+              Скорее отрицательное
+            </label>
+            <label class="radio-block__item">
+              <input class="radio-block__input" type="radio" name="impression">
+              Затрудняюсь ответить
+            </label>
           </div>
-          <div class="form__checkbox-block checkbox-block">
-            <p class="checkbox-block__heading">Посещенные достопримечательности:</p>
-            <div class="checkbox-block__list">
-              <label class="checkbox-block__item">
-                <input class="checkbox-block__item-input" type="checkbox" name="bridge" checked>
-                Мост Дьявола
-              </label>
-              <label class="checkbox-block__item">
-                <input class="checkbox-block__item-input" type="checkbox" name="mount" checked>
-                Гора-Колокол
-              </label>
-              <label class="checkbox-block__item">
-                <input class="checkbox-block__item-input" type="checkbox" name="park" checked>
-                Слайд-парк
-              </label>
-              <label class="checkbox-block__item">
-                <input class="checkbox-block__item-input" type="checkbox" name="roke">
-                Красные скалы
-              </label>
-            </div>
+        </div>
+        <div class="form__checkbox-block checkbox-block">
+          <p class="checkbox-block__heading">Посещенные достопримечательности:</p>
+          <div class="checkbox-block__list">
+            <label class="checkbox-block__item">
+              <input class="checkbox-block__item-input" type="checkbox" name="bridge" checked>
+              Мост Дьявола
+            </label>
+            <label class="checkbox-block__item">
+              <input class="checkbox-block__item-input" type="checkbox" name="mount" checked>
+              Гора-Колокол
+            </label>
+            <label class="checkbox-block__item">
+              <input class="checkbox-block__item-input" type="checkbox" name="park" checked>
+              Слайд-парк
+            </label>
+            <label class="checkbox-block__item">
+              <input class="checkbox-block__item-input" type="checkbox" name="roke">
+              Красные скалы
+            </label>
           </div>
-          <div class="form__emotions">
-            <p class="form__emotions-heading">Опишите свои эмоции:</p>
-            <input class="form__emotions-text" type="text" placeholder="Опишите подробно все свои восторги">
-          </div>
-          <div class="form__submit-block">
-            <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
-            <p class="form__submit-remark">* — обязательные поля</p>
-          </div>
-        </form>
-      </section>
+        </div>
+        <div class="form__emotions">
+          <p class="form__emotions-heading">Опишите свои эмоции:</p>
+          <input class="form__emotions-text" type="text" placeholder="Опишите подробно все свои восторги">
+        </div>
+        <div class="form__submit-block">
+          <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+          <p class="form__submit-remark">* — обязательные поля</p>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <p class="footer__hashtag">#visitsedona</p>
