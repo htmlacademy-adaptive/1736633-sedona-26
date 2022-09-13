@@ -31,6 +31,7 @@
   display: block;
   background-color: inherit;
   padding: 0;
+  z-index: 2;
 
   @media (min-width: 768px) {
     display: none;
@@ -40,8 +41,34 @@
 .main-header__toggle {
   position: absolute;
   z-index: 11;
-  top: 17px;
+  top: 26px;
   right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: @light-blue;
+  border: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 4px;
+    top: -8px;
+    right: 0;
+    background-color: @light-blue;
+    border: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 4px;
+    top: 9px;
+    right: 0;
+    background-color: @light-blue;
+    border: 0;
+  }
 
   @media (min-width: 768px) {
     display: none;
