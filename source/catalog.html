@@ -14,19 +14,17 @@
       <a class="main-header__logo" href="#">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
       </a>
-      <nav class="main-header__nav main-header__nav--close">
-        <ul class="nav-block">
+      <nav class="nav-block nav-block--close">
+        <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
+        <ul class="nav-block__list nav-block__list--left">
           <li class="nav-block__item nav-block__item--active">
-            <a class="nav-block__link" href="#">Главная</a>
+            <a class="nav-block__link" href="index.html">Главная</a>
           </li>
           <li class="nav-block__item">
             <a class="nav-block__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="nav-block__item nav-block__item--logo">
-            <a class="nav-block__link nav-block__link--nav" href="#">
-              <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
-            </a>
-          </li>
+        </ul>
+        <ul class="nav-block__list nav-block__list--right">
           <li class="nav-block__item">
             <a class="nav-block__link" href="form.html">Форма отзыва</a>
           </li>
