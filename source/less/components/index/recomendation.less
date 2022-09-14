@@ -1,15 +1,27 @@
+.recomendation {
+  padding: 0 18px;
+
+  @media (min-width: 768px) {
+    text-align: center;
+    padding: 0;
+  }
+}
+
 .recomendation__name {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 
   &--home::before {
     content: "";
     display: block;
     width: 75px;
     height: 72px;
-    background-image: url("../../../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
   }
@@ -19,7 +31,7 @@
     display: block;
     width: 76px;
     height: 69px;
-    background-image: url("../../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
   }
@@ -29,9 +41,13 @@
     display: block;
     width: 63px;
     height: 75px;
-    background-image: url("../../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 21px;
   }
 }
 
@@ -40,4 +56,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }

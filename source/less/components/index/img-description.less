@@ -1,13 +1,22 @@
 .img-description {
   background-color: @light-blue;
+  text-align: center;
+  padding: 32px 18px 40px;
 }
 
 .img-description__heading {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
 }
 
 .img-description__number {
@@ -15,6 +24,8 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 .img-description__text {
@@ -23,4 +34,5 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }

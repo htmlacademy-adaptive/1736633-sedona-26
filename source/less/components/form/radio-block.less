@@ -1,9 +1,24 @@
 .radio-block__heading {
   font-family: @PT-Sans;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+.radio-block__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .radio-block__item {

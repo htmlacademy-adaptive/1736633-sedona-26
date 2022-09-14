@@ -1,18 +1,33 @@
 .benefit {
   background-color: @light-grey;
+  text-align: center;
+  padding: 0 18px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .benefit__name {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
 }
 
 .benefit__number {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .benefit__text {
@@ -20,4 +35,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }

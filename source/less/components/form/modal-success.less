@@ -22,9 +22,13 @@
 .modal-success__heading {
   font-family: @PT-Sans;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .modal-success__text {
@@ -51,10 +55,14 @@
   display: block;
   font-family: @PT-Sans;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   border: 0;
   color: #ffffff;
   background-color: @button-blue;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
 }

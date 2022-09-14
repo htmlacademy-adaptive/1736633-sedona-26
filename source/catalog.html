@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,19 +11,20 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-header__nav">
-        <ul class="nav-block">
+      <a class="main-header__logo" href="#">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
+      </a>
+      <nav class="nav-block nav-block--close">
+        <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
+        <ul class="nav-block__list nav-block__list--left">
           <li class="nav-block__item nav-block__item--active">
-            <a class="nav-block__link" href="#">Главная</a>
+            <a class="nav-block__link" href="index.html">Главная</a>
           </li>
           <li class="nav-block__item">
             <a class="nav-block__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="nav-block__item nav-block__item--logo">
-            <a class="nav-block__link nav-block__link--nav" href="#">
-              <img src="img/logo.png" width="185" height="96" alt="Логотип Седона" />
-            </a>
-          </li>
+        </ul>
+        <ul class="nav-block__list nav-block__list--right">
           <li class="nav-block__item">
             <a class="nav-block__link" href="form.html">Форма отзыва</a>
           </li>
