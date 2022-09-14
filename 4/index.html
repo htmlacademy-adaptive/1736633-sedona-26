@@ -15,19 +15,17 @@
       <a class="main-header__logo" href="#">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
       </a>
-      <nav class="main-header__nav main-header__nav--close">
-        <ul class="nav-block">
+      <nav class="nav-block nav-block--close">
+        <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
+        <ul class="nav-block__list nav-block__list--left">
           <li class="nav-block__item nav-block__item--active">
-            <a class="nav-block__link" href="#">Главная</a>
+            <a class="nav-block__link" href="index.html">Главная</a>
           </li>
           <li class="nav-block__item">
             <a class="nav-block__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="nav-block__item nav-block__item--logo">
-            <a class="nav-block__link nav-block__link--nav" href="#">
-              <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
-            </a>
-          </li>
+        </ul>
+        <ul class="nav-block__list nav-block__list--right">
           <li class="nav-block__item">
             <a class="nav-block__link" href="form.html">Форма отзыва</a>
           </li>
@@ -68,19 +66,19 @@
         </li>
         <li class="recomendation advantages__item">
           <h3 class="recomendation__name recomendation__name--home">Жильё</h3>
-          <p class="recomendation__text">
+          <p class="recomendation__text recomendation__text--home">
             Рекомендуем пожить в настоящем мотеле, все как в кино!
           </p>
         </li>
         <li class="recomendation advantages__item">
           <h3 class="recomendation__name recomendation__name--eat">Еда</h3>
-          <p class="recomendation__text">
+          <p class="recomendation__text recomendation__text--eat">
             Всегда заказывайте фирменный бургер,Вы не разочаруетесь!
           </p>
         </li>
         <li class="recomendation advantages__item">
           <h3 class="recomendation__name recomendation__name--gift">Сувениры</h3>
-          <p class="recomendation__text">
+          <p class="recomendation__text recomendation__text--gift">
             Не только китайского, но и местного производства!
           </p>
         </li>
@@ -97,31 +95,37 @@
           </div>
         </li>
         <li class="benefit advantages__item">
-          <h3 class="benefit__name">
-            Небольшая площадь
-          </h3>
-          <p class="benefit__number">— №3 —</p>
-          <p class="benefit__text">
-            Все интересные места находятся очень близко
-          </p>
+          <div class="benefit__content">
+            <h3 class="benefit__name">
+              Небольшая площадь
+            </h3>
+            <p class="benefit__number">— №3 —</p>
+            <p class="benefit__text">
+              Все интересные места находятся очень близко
+            </p>
+          </div>
         </li>
         <li class="benefit advantages__item">
-          <h3 class="benefit__name">
-            Красивая дорога
-          </h3>
-          <p class="benefit__number">— №4 —</p>
-          <p class="benefit__text">
-            Ехать в седону из лас-вегаса совсем не скучно!
-          </p>
+          <div class="benefit__content">
+            <h3 class="benefit__name">
+              Красивая дорога
+            </h3>
+            <p class="benefit__number">— №4 —</p>
+            <p class="benefit__text">
+              Ехать в седону из лас-вегаса совсем не скучно!
+            </p>
+          </div>
         </li>
         <li class="benefit advantages__item">
-          <h3 class="benefit__name">
-            Мало туристов
-          </h3>
-          <p class="benefit__number">— №5 —</p>
-          <p class="benefit__text">
-            Большинство едет в гранд каньон и толпится там
-          </p>
+          <div class="benefit__content">
+            <h3 class="benefit__name">
+              Мало туристов
+            </h3>
+            <p class="benefit__number">— №5 —</p>
+            <p class="benefit__text">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </div>
         </li>
       </ul>
     </section>

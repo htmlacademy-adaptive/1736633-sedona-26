@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans";
@@ -29,21 +29,49 @@ body {
   overflow: hidden;
 }
 .nav-block {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-block--close {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-block--close {
+    display: flex;
+  }
+}
+.nav-block__list {
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 768px) {
-  .nav-block {
+  .nav-block__list {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 100%;
+    max-width: 40%;
   }
 }
 .nav-block__item {
@@ -74,33 +102,9 @@ body {
     padding: 18px 0 17px;
   }
 }
-.nav-block__link--nav {
-  display: none;
-}
-@media (min-width: 768px) {
-  .nav-block__link--nav {
-    display: block;
-    background-color: inherit;
-    padding: 0;
-  }
-}
-.main-header__nav {
-  z-index: 10;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.main-header__nav--close {
-  display: none;
-}
-@media (min-width: 768px) {
-  .main-header__nav {
-    position: relative;
-  }
-  .main-header__nav--close {
-    display: flex;
-  }
+.main-header {
+  background-color: #ffffff;
+  min-height: 56px;
 }
 .main-header__wrapper {
   display: flex;
@@ -110,15 +114,16 @@ body {
   margin: 0 auto;
 }
 .main-header__logo {
+  z-index: 10;
   display: block;
+  position: absolute;
   background-color: inherit;
   padding: 0;
-  z-index: 2;
   max-height: 56px;
 }
 @media (min-width: 768px) {
   .main-header__logo {
-    display: none;
+    z-index: 11;
   }
 }
 .main-header__toggle {
@@ -501,7 +506,7 @@ body {
   display: block;
   width: 75px;
   height: 72px;
-  background-image: url("/img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
   background-color: #ffffff;
   background-repeat: no-repeat;
 }
