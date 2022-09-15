@@ -1,9 +1,32 @@
 .recomendation {
   padding: 0 18px;
+  margin-bottom: 22px;
+
+  &:nth-child(2) {
+    margin-top: 22px;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 52px;
+  }
 
   @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 0;
+    margin-bottom: 0;
+    min-height: 330px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -15,39 +38,69 @@
   margin: 0;
   margin-bottom: 16px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   &--home::before {
     content: "";
     display: block;
-    width: 75px;
-    height: 72px;
-    background-image: url("../img/icon-house.svg");
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-house-mob.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
+    margin-right: 7px;
   }
 
   &--eat::before {
     content: "";
     display: block;
-    width: 76px;
-    height: 69px;
-    background-image: url("../img/icon-burger.svg");
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-burger-mob.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
+    margin-right: 12px;
   }
 
   &--gift::before {
     content: "";
     display: block;
-    width: 63px;
-    height: 75px;
-    background-image: url("../img/icon-gift.svg");
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-gift-mob.svg");
     background-color: #ffffff;
     background-repeat: no-repeat;
+    margin-right: 4px;
   }
 
   @media (min-width: 768px) {
     font-size: 21px;
+    flex-direction: column;
+
+    &--home::before {
+      background-image: url("../img/icon-house.svg");
+      width: 75px;
+      height: 72px;
+      margin-right: 0;
+      margin-bottom: 26px;
+    }
+
+    &--eat::before {
+      background-image: url("../img/icon-burger.svg");
+      width: 76px;
+      height: 68px;
+      margin-right: 0;
+      margin-bottom: 27px;
+    }
+
+    &--gift::before {
+      background-image: url("../img/icon-gift.svg");
+      width: 64px;
+      height: 75px;
+      margin-right: 0;
+      margin-bottom: 26px;
+    }
   }
 }
 
@@ -57,4 +110,32 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  &--home {
+    padding-left: 47px;
+  }
+
+  &--eat {
+    padding-left: 52px;
+  }
+
+  &--gift {
+    padding-left: 44px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 80%;
+
+    &--home {
+      padding-left: 0;
+    }
+
+    &--eat {
+      padding-left: 0;
+    }
+
+    &--gift {
+      padding-left: 0;
+    }
+  }
 }

@@ -1,9 +1,13 @@
 .footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 18px 23px;
 
   @media (min-width: 768px) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    padding: 36px 0;
   }
 }
 
@@ -13,11 +17,19 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__made-in {
-  &::before {
-    position: absolute;
+  display: flex;
+  align-items: center;
+
+  &::after {
     content: "";
     display: block;
     width: 27px;
@@ -33,4 +45,6 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding-right: 11px;
 }

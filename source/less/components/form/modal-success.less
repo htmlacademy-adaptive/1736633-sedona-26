@@ -14,9 +14,14 @@
 
 .modal-success__wrapper {
   background-color: #ffffff;
-  width: 640px;
-  height: 347px;
+  width: 100%;
+  height: auto;
   margin: auto;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    max-width: 640px;
+  }
 }
 
 .modal-success__heading {
@@ -25,6 +30,7 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 30px;
@@ -37,18 +43,27 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .modal-success__white-background {
-  padding: 55px 98px 32px;
   background-color: #ffffff;
+  padding: 44px 39px 34px;
+
+  @media (min-width: 768px) {
+    padding: 53px 98px 30px;
+  }
 }
 
 .modal-success__grey-background {
   box-sizing: border-box;
   width: 100%;
+  padding: 20px;
   background-color: @light-grey;
-  padding: 44px 91px;
+
+  @media (min-width: 768px) {
+    padding: 44px 91px;
+  }
 }
 
 .modal-success__submit {
@@ -61,8 +76,10 @@
   border: 0;
   color: #ffffff;
   background-color: @button-blue;
+  padding: 18px 76px 14px;
 
   @media (min-width: 768px) {
     font-size: 21px;
+    padding: 18px 154px 14px;
   }
 }
