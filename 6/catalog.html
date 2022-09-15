@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1736633-sedona-26/6/">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="#">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
+      </a>
+      <nav class="nav-block nav-block--close">
+        <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
+        <ul class="nav-block__list nav-block__list--left">
+          <li class="nav-block__item nav-block__item--active">
+            <a class="nav-block__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="nav-block__list nav-block__list--right">
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav-block__item">
+            <a class="nav-block__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="main-header__toggle">
+        <span class="visually-hidden">Кнопка бургер</span>
+      </button>
+    </div>
+  </header>
+  <main class="catalog-content">
+    <h1 class="visually-hidden">Фото и видео Седоны</h1>
+    <div class="catalog-content__wrapper">
+      <div class="page-intro">
+        <span class="visually-hidden">Интро седона</span>
+      </div>
+      <section class="catalog-photo">
+        <div class="catalog-photo__slogan">
+          <h2 class="catalog-photo__slogan-definition">Фото и видео</h2>
+          <p class="catalog-photo__slogan-description">Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.</p>
+        </div>
+        <ul class="pic-list">
+          <li class="catalog-item catalog-photo__content-item">
+            <img class="catalog-item__image" src="img/catalog-content-1.jpg" alt="Неродные просторы">
+            <div class="catalog-item__description">
+              <div class="catalog-item__description-heading">
+                <h3 class="catalog-item__description-heading-name">Неродные просторы</h3>
+                <p class="catalog-item__description-heading-author">Автор фото: Борис</p>
+              </div>
+              <div class="like-counter catalog-item__like">
+                <p class="like-counter__count">1350</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item catalog-photo__content-item">
+            <img class="catalog-item__image" src="img/catalog-content-2.jpg" alt="Местная растительность">
+            <div class="catalog-item__description">
+              <div class="catalog-item__description-heading">
+                <h3 class="catalog-item__description-heading-name">Местная растительность</h3>
+                <p class="catalog-item__description-heading-author">Автор фото: Сергей</p>
+              </div>
+              <div class="like-counter catalog-item__like">
+                <p class="like-counter__count">143</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-photo__content-item catalog-item">
+            <img class="catalog-item__image" src="img/catalog-content-3.jpg" alt="Дорога на север">
+            <div class="catalog-item__description">
+              <div class="catalog-item__description-heading">
+                <h3 class="catalog-item__description-heading-name">Дорога на север</h3>
+                <p class="catalog-item__description-heading-author">Автор фото: Петр</p>
+              </div>
+              <div class="like-counter catalog-item__like">
+                <p class="like-counter__count">96</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-photo__content-item catalog-item">
+            <img class="catalog-item__image" src="img/catalog-content-4.jpg" alt="Мост дьявола">
+            <div class="catalog-item__description">
+              <div class="catalog-item__description-heading">
+                <h3 class="catalog-item__description-heading-name">Мост дьявола</h3>
+                <p class="catalog-item__description-heading-author">Автор фото: Антон</p>
+              </div>
+              <div class="like-counter catalog-item__like">
+                <p class="like-counter__count">254</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <div class="video__heading">
+          <p class="video__heading-name">Все еще сомневаетесь?</p>
+          <p class="video__heading-slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </div>
+        <div class="video__block">
+          <video class="video__block-movie" poster="img/video-desktop.jpg" src="#"></video>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__hashtag">#visitsedona</p>
+    <ul class="social-networks">
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--vk" href="#">
+          <span class="visually-hidden"> Ссылка ВК </span>
+        </a>
+      </li>
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--telegram" href="#">
+          <span class="visually-hidden"> Ссылка телеграм </span>
+        </a>
+      </li>
+      <li class="social-networks__item">
+        <a class="social-networks__link social-networks__link--youtube" href="#">
+          <span class="visually-hidden"> Ссылка ютуб </span>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__made-in">
+      <p class="footer__made-in-text">Разработно</p>
+    </div>
+  </footer>
+</body>
+
+</html>
