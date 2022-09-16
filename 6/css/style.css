@@ -16,7 +16,17 @@ body {
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .nav-block {
   z-index: 10;
@@ -321,17 +331,23 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .catalog-item:first-child .catalog-item__image {
-    height: 400px;
-  }
-  .catalog-item:nth-child(3) .catalog-item__description {
-    background-color: #eaeaea;
-  }
 }
 @media (min-width: 1200px) {
   .catalog-item:first-child {
     grid-column-end: 4;
   }
+}
+@media (min-width: 768px) {
+  .catalog-item:first-child .catalog-item__image {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-item:nth-child(3) .catalog-item__description {
+    background-color: #eaeaea;
+  }
+}
+@media (min-width: 1200px) {
   .catalog-item:nth-child(3) .catalog-item__description {
     background-color: #0000004d;
   }
@@ -783,14 +799,16 @@ body {
   padding: 0 18px;
   min-height: 167px;
 }
-.benefit:not(:last-child) div {
-  border-bottom: 1px solid #D6D6D6;
-}
 @media (min-width: 768px) {
   .benefit {
     padding: 0;
     min-height: 256px;
   }
+}
+.benefit:not(:last-child) div {
+  border-bottom: 1px solid #D6D6D6;
+}
+@media (min-width: 768px) {
   .benefit:not(:last-child) div {
     border-bottom: 0;
   }
@@ -1139,11 +1157,6 @@ body {
   width: 58px;
   height: 58px;
   grid-row: 2/3;
-}
-.form__field-name--email {
-  display: grid;
-  grid-template-columns: 1fr 58px;
-  grid-template-rows: auto auto;
 }
 .form__field-name--email::after {
   content: "";
@@ -1570,7 +1583,7 @@ body {
     background-color: #dbdbdb;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .checkbox-block__heading {
     margin-bottom: 59px;
   }
@@ -1635,7 +1648,7 @@ body {
   flex-grow: 0;
   margin-right: 16px;
 }
-.checkbox-block__input:checked + .checkbox-block__label::after {
+.checkbox-block__input + .checkbox-block__label::after {
   content: "";
   position: absolute;
   display: block;
