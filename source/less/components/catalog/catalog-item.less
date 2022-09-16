@@ -14,24 +14,28 @@
       grid-column-start: 1;
       grid-column-end: 3;
     }
-
-    &:first-child .catalog-item__image {
-      height: 400px;
-    }
-
-    &:nth-child(3) .catalog-item__description {
-      background-color: #eaeaea;
-    }
   }
 
   @media (min-width: 1200px) {
     &:first-child {
       grid-column-end: 4;
     }
+  }
+}
 
-    &:nth-child(3) .catalog-item__description {
-      background-color: #0000004d;
-    }
+.catalog-item:first-child .catalog-item__image {
+  @media (min-width: 768px) {
+    height: 400px;
+  }
+}
+
+.catalog-item:nth-child(3) .catalog-item__description {
+  @media (min-width: 768px) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: 1200px) {
+    background-color: #0000004d;
   }
 }
 

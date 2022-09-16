@@ -124,36 +124,30 @@
     display: grid;
     grid-template-columns: 1fr 58px;
     grid-template-rows: auto auto;
-
-    &::after {
-      content: "";
-      display: block;
-      background-color: #e6e6e6;
-      background-image: url("../img/input-phone-icon.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      width: 58px;
-      height: 58px;
-      grid-row: 2/3;
-    }
   }
 
-  &--email {
-    display: grid;
-    grid-template-columns: 1fr 58px;
-    grid-template-rows: auto auto;
+  &--tel::after {
+    content: "";
+    display: block;
+    background-color: #e6e6e6;
+    background-image: url("../img/input-phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 58px;
+    height: 58px;
+    grid-row: 2/3;
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      background-color: #e6e6e6;
-      background-image: url("../img/input-email-icon.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      width: 58px;
-      height: 58px;
-      grid-row: 2/3;
-    }
+  &--email::after {
+    content: "";
+    display: block;
+    background-color: #e6e6e6;
+    background-image: url("../img/input-email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 58px;
+    height: 58px;
+    grid-row: 2/3;
   }
 
   @media (min-width: 768px) {
