@@ -1,6 +1,12 @@
 .main-header {
+  position: fixed;
+  width: 100%;
   background-color: #ffffff;
   min-height: 56px;
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .main-header__wrapper {

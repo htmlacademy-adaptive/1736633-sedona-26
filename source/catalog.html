@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/png/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/png/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,7 +56,10 @@
         </div>
         <ul class="pic-list">
           <li class="catalog-item catalog-photo__content-item">
-            <img class="catalog-item__image" src="img/catalog-content-1.jpg" alt="Неродные просторы">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-1.jpg 1x, img/catalog-content/catalog-content-1@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-1-mob.jpg" srcset="img/catalog-content/catalog-content-1-mob@2x.jpg" width="843" height="280" alt="Неродные просторы">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Неродные просторы</h3>
@@ -64,7 +71,10 @@
             </div>
           </li>
           <li class="catalog-item catalog-photo__content-item">
-            <img class="catalog-item__image" src="img/catalog-content-2.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-2.jpg 1x, img/catalog-content/catalog-content-2@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-2-mob.jpg" srcset="img/catalog-content/catalog-content-2-mob@2x.jpg" width="420" height="280" alt="Местная растительность">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Местная растительность</h3>
@@ -76,7 +86,10 @@
             </div>
           </li>
           <li class="catalog-photo__content-item catalog-item">
-            <img class="catalog-item__image" src="img/catalog-content-3.jpg" alt="Дорога на север">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-3.jpg 1x, img/catalog-content/catalog-content-3@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-3-mob.jpg" srcset="img/catalog-content/catalog-content-3-mob@2x.jpg" width="420" height="280" alt="Дорога на север">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Дорога на север</h3>
@@ -88,7 +101,8 @@
             </div>
           </li>
           <li class="catalog-photo__content-item catalog-item">
-            <img class="catalog-item__image" src="img/catalog-content-4.jpg" alt="Мост дьявола">
+            <source media="(768px)" srcset="img/catalog-content/catalog-content-4.jpg 1x, img/catalog-content/catalog-content-4@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/catalog-content/catalog-content-4-mob.jpg" srcset="img/catalog-content/catalog-content-4-mob@2x.jpg" width="420" height="280" alt="Мост дьявола">
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Мост дьявола</h3>
