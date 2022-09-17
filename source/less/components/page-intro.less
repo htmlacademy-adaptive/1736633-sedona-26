@@ -6,7 +6,12 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 37px;
+  height: 158px;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
   &::after {
     display: block;
@@ -23,17 +28,21 @@
     content: "";
     background-image: url("../img/page-intro-sedona-mob.svg");
     background-repeat: no-repeat;
-    width: 100%;
+    width: 229px;
     height: 39px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 768px) {
     background-image: url("../img/index-intro-back.jpg");
     margin-bottom: 66px;
+    height: 290px;
 
     &::before {
       background-image: url("../img/intro-text-sedona.svg");
       height: 78px;
+      width: 457px;
+      margin-bottom: 60px;
     }
   }
 }

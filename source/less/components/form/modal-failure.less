@@ -13,11 +13,19 @@
 }
 
 .modal-failure__wrapper {
-  padding: 52px 47px 49px;
+  padding: 45px 42px 35px;
+  box-sizing: border-box;
   background-color: #ffffff;
-  width: 400px;
-  height: 347px;
+  max-width: 100%;
+  min-height: auto;
   margin: auto;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: 400px;
+    min-height: 244px;
+    padding: 54px 47px 49px;
+  }
 }
 
 .modal-failure__heading {
@@ -26,6 +34,8 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 26px;
 
   @media (min-width: 768px) {
     font-size: 30px;
@@ -38,6 +48,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .modal-failure__submit {
@@ -49,8 +61,10 @@
   border: 0;
   color: #ffffff;
   background-color: @button-blue;
+  padding: 18px 78px 14px;
 
   @media (min-width: 768px) {
+    padding: 18px 122px 14px;
     font-size: 21px;
   }
 }
