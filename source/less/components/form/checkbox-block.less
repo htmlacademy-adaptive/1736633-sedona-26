@@ -101,7 +101,15 @@
   margin-right: 16px;
 }
 
-.checkbox-block__input + .checkbox-block__label::after {
+.checkbox-block__input:hover + .checkbox-block__label::before {
+  background-color: @input-bg-hover;
+}
+
+.checkbox-block__input:active + .checkbox-block__label::before {
+  background-color: @input-bg-down;
+}
+
+.checkbox-block__input:checked + .checkbox-block__label::after {
   content: "";
   position: absolute;
   display: block;
@@ -114,6 +122,10 @@
   flex-shrink: 0;
   flex-grow: 0;
   padding: 15px 12px;
+}
+
+.checkbox-block__input:active + .checkbox-block__label::after {
+  opacity: 0.3;
 }
 
 .checkbox-block__label {

@@ -97,6 +97,14 @@
   margin-right: 16px;
 }
 
+.radio-block__input:hover + .radio-block__label::before {
+  background-color: @input-bg-hover;
+}
+
+.radio-block__input:active + .radio-block__label::before {
+  background-color: @input-bg-down;
+}
+
 .radio-block__input:checked + .radio-block__label::after {
   content: "";
   position: absolute;
@@ -108,6 +116,10 @@
   flex-shrink: 0;
   flex-grow: 0;
   margin-left: 15px;
+}
+
+.radio-block__input:checked:active + .radio-block__label::after {
+  opacity: 0.3;
 }
 
 .radio-block__label {
