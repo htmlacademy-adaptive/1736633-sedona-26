@@ -2,16 +2,21 @@
   background-image: url("../img/page-intro-back-mob.jpg");
   background-color: @light-blue;
   background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-position: 50% 0;
+  background-size: 902px auto;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 37px;
-  height: 158px;
+  height: 214px;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/page-intro-back-mob@2x.jpg");
+  }
 
   &::after {
     display: block;
@@ -34,9 +39,15 @@
   }
 
   @media (min-width: 768px) {
-    background-image: url("../img/index-intro-back.jpg");
+    background-image: url("../img/page-intro-back.jpg");
+    background-size: 1200px auto;
+    background-position: 50% -200px;
     margin-bottom: 66px;
     height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-intro-back@2x.jpg");
+    }
 
     &::before {
       background-image: url("../img/intro-text-sedona.svg");

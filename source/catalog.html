@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/png/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/png/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
       </a>
-      <nav class="nav-block nav-block--close">
+      <nav class="nav-block nav-block--close" id="nav-block">
         <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
         <ul class="nav-block__list nav-block__list--left">
           <li class="nav-block__item nav-block__item--active">
@@ -33,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <button class="main-header__toggle">
+      <button class="main-header__toggle" id="header-toggle">
         <span class="visually-hidden">Кнопка бургер</span>
       </button>
     </div>
@@ -52,7 +56,10 @@
         </div>
         <ul class="pic-list">
           <li class="catalog-item catalog-photo__content-item">
-            <img class="catalog-item__image" src="img/catalog-content-1.jpg" alt="Неродные просторы">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-1.jpg 1x, img/catalog-content/catalog-content-1@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-1-mob.jpg" srcset="img/catalog-content/catalog-content-1-mob@2x.jpg 2x" width="843" height="280" alt="Неродные просторы">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Неродные просторы</h3>
@@ -64,7 +71,10 @@
             </div>
           </li>
           <li class="catalog-item catalog-photo__content-item">
-            <img class="catalog-item__image" src="img/catalog-content-2.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-2.jpg 1x, img/catalog-content/catalog-content-2@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-2-mob.jpg" srcset="img/catalog-content/catalog-content-2-mob@2x.jpg 2x" width="420" height="280" alt="Местная растительность">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Местная растительность</h3>
@@ -76,7 +86,10 @@
             </div>
           </li>
           <li class="catalog-photo__content-item catalog-item">
-            <img class="catalog-item__image" src="img/catalog-content-3.jpg" alt="Дорога на север">
+            <picture>
+              <source media="(768px)" srcset="img/catalog-content/catalog-content-3.jpg 1x, img/catalog-content/catalog-content-3@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/catalog-content/catalog-content-3-mob.jpg" srcset="img/catalog-content/catalog-content-3-mob@2x.jpg 2x" width="420" height="280" alt="Дорога на север">
+            </picture>
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Дорога на север</h3>
@@ -88,7 +101,8 @@
             </div>
           </li>
           <li class="catalog-photo__content-item catalog-item">
-            <img class="catalog-item__image" src="img/catalog-content-4.jpg" alt="Мост дьявола">
+            <source media="(768px)" srcset="img/catalog-content/catalog-content-4.jpg 1x, img/catalog-content/catalog-content-4@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/catalog-content/catalog-content-4-mob.jpg" srcset="img/catalog-content/catalog-content-4-mob@2x.jpg 2x" width="420" height="280" alt="Мост дьявола">
             <div class="catalog-item__description">
               <div class="catalog-item__description-heading">
                 <h3 class="catalog-item__description-heading-name">Мост дьявола</h3>
@@ -117,25 +131,38 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="social-networks">
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--vk" href="#">
+        <a class="social-networks__link social-networks__link--vk blue-button" href="#">
           <span class="visually-hidden"> Ссылка ВК </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
+          </svg>
         </a>
       </li>
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--telegram" href="#">
+        <a class="social-networks__link social-networks__link--telegram blue-button" href="#">
           <span class="visually-hidden"> Ссылка телеграм </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#tg-icon"></use>
+          </svg>
         </a>
       </li>
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--youtube" href="#">
+        <a class="social-networks__link social-networks__link--youtube blue-button" href="#">
           <span class="visually-hidden"> Ссылка ютуб </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#yt-icon"></use>
+          </svg>
         </a>
       </li>
     </ul>
-    <div class="footer__made-in">
+    <a class="footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="footer__made-in-text">Разработно</p>
-    </div>
+      <svg class="footer__logo" width="27" height="34">
+        <use xlink:href="img/sprite.svg#html-logo"></use>
+      </svg>
+    </a>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

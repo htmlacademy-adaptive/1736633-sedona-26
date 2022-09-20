@@ -1,6 +1,13 @@
 .main-header {
+  position: fixed;
+  width: 100%;
   background-color: #ffffff;
   min-height: 56px;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .main-header__wrapper {
@@ -25,35 +32,20 @@
 }
 
 .main-header__toggle {
-  position: absolute;
+  position: fixed;
   z-index: 11;
-  top: 26px;
+  top: 15px;
   right: 20px;
   width: 23px;
-  height: 4px;
-  background-color: @light-blue;
+  height: 22px;
+  padding: 0;
   border: 0;
+  background-image: url("../img/icon-menu.svg");
+  background-color: inherit;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 23px;
-    height: 4px;
-    top: -8px;
-    right: 0;
-    background-color: @light-blue;
-    border: 0;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 23px;
-    height: 4px;
-    top: 9px;
-    right: 0;
-    background-color: @light-blue;
-    border: 0;
+  &--close {
+    background-image: url("../img/icon-cross.svg");
+    background-color: inherit;
   }
 
   @media (min-width: 768px) {
