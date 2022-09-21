@@ -9,7 +9,7 @@
   <link rel="icon" href="img/png/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/png/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
       </a>
       <nav class="nav-block nav-block--close" id="nav-block">
-        <!-- Можно ли блоку задавать модификатор? Если нет, уберу в следующей домашке -->
         <ul class="nav-block__list nav-block__list--left">
           <li class="nav-block__item nav-block__item--active">
             <a class="nav-block__link" href="index.html">Главная</a>
@@ -66,10 +65,9 @@
             </p>
           </div>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/advantages-img/advantages-img-1-desc.webp 1x, img/advantages-img/advantages-img-1-desc@x2.webp 2x">
             <source media="(min-width: 540px)" srcset="img/advantages-img/advantages-img-1-desc.webp 1x, img/advantages-img/advantages-img-1-desc@x2.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/advantages-img/advantages-img-1-desc.jpg 1x, img/advantages-img/advantages-img-1-desc@x2.jpg 2x">
-            <source media="(min-width: 540px)" srcset="img/advantages-img/advantages-img-1-desc.jpg 1x, img/advantages-img/advantages-img-1-desc@x2.jpg 2x">
-            <img class="advantages__image" src="img/advantages-img/advantages-img-1-mob.jpg" srcset="img/advantages-img/advantages-img-1-mob@x2.jpg 2x" width="520" height="256" alt="Фото города" />
+            <img class="advantages__image" src="img/advantages-img/advantages-img-1-mob.webp" srcset="img/advantages-img/advantages-img-1-mob@x2.webp 2x" width="520" height="256" alt="Фото города" />
           </picture>
         </li>
         <li class="recomendation advantages__item">
@@ -92,9 +90,9 @@
         </li>
         <li class="advantages__item advantages__item--picture advantages__item--picture-second">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/advantages-img/advantages-img-2-desc.jpg 1x, img/advantages-img/advantages-img-2-desc@x2.jpg 2x">
-            <source media="(min-width: 540px)" srcset="img/advantages-img/advantages-img-2-desc.jpg 1x, img/advantages-img/advantages-img-2-desc@x2.jpg 2x">
-            <img class="advantages__image" src="img/advantages-img/advantages-img-2-mob.jpg" srcset="img/advantages-img/advantages-img-2-mob@x2.jpg 2x" width="520" height="256" alt="Фото города" />
+            <source media="(min-width: 1200px)" srcset="img/advantages-img/advantages-img-2-desc.webp 1x, img/advantages-img/advantages-img-2-desc@x2.webp 2x">
+            <source media="(min-width: 540px)" srcset="img/advantages-img/advantages-img-2-desc.webp 1x, img/advantages-img/advantages-img-2-desc@x2.webp 2x">
+            <img class="advantages__image" src="img/advantages-img/advantages-img-2-mob.webp" srcset="img/advantages-img/advantages-img-2-mob@x2.webp 2x" width="520" height="256" alt="Фото города" />
           </picture>
           <div class="img-description advantages__img-description">
             <h3 class="img-description__heading">
