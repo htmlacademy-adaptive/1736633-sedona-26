@@ -126,6 +126,12 @@
     grid-template-rows: auto auto;
   }
 
+  &--email {
+    display: grid;
+    grid-template-columns: 1fr 58px;
+    grid-template-rows: auto auto;
+  }
+
   &--tel::after {
     content: "";
     display: block;
@@ -167,6 +173,17 @@
   padding: 16px 16px 16px;
   display: block;
   grid-row: 2/3;
+
+  &:hover {
+    background-color: @input-bg-hover;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 }
 
 .form__emotions {
@@ -253,8 +270,6 @@
   line-height: 26px;
   text-transform: uppercase;
   border: 0;
-  color: #ffffff;
-  background-color: @button-blue;
   width: 100%;
   padding: 19px 0 14px;
   margin-bottom: 3px;

@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона" />
       </a>
       <nav class="nav-block nav-block--close" id="nav-block">
@@ -72,11 +72,11 @@
             <div class="form__field-block">
               <label class="form__field-name form__field-name--tel">
                 Контактный телефон*:
-                <input class="form__field-text" type="text" name="tel" placeholder="Введите телефон">
+                <input class="form__field-text" type="tel" name="tel" placeholder="Введите телефон">
               </label>
               <label class="form__field-name form__field-name--email">
                 Электронная почта*:
-                <input class="form__field-text" type="text" name="email" placeholder="Введите e-mail">
+                <input class="form__field-text" type="email" name="email" placeholder="Введите e-mail">
               </label>
             </div>
           </div>
@@ -124,7 +124,7 @@
           <textarea class="form__emotions-text" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="form__submit-block">
-          <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+          <input class="form__submit-button interactive-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
           <p class="form__submit-remark">* — обязательные поля</p>
         </div>
       </form>
@@ -134,24 +134,36 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="social-networks">
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--vk" href="#">
+        <a class="social-networks__link social-networks__link--vk interactive-button" href="#">
           <span class="visually-hidden"> Ссылка ВК </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#vk-icon"/>
+          </svg>
         </a>
       </li>
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--telegram" href="#">
+        <a class="social-networks__link social-networks__link--telegram interactive-button" href="#">
           <span class="visually-hidden"> Ссылка телеграм </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#tg-icon"/>
+          </svg>
         </a>
       </li>
       <li class="social-networks__item">
-        <a class="social-networks__link social-networks__link--youtube" href="#">
+        <a class="social-networks__link social-networks__link--youtube interactive-button" href="#">
           <span class="visually-hidden"> Ссылка ютуб </span>
+          <svg class="social-networks__logo" width="24" height="24">
+            <use xlink:href="img/sprite.svg#yt-icon"/>
+          </svg>
         </a>
       </li>
     </ul>
-    <div class="footer__made-in">
+    <a class="footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="footer__made-in-text">Разработно</p>
-    </div>
+      <svg class="footer__logo" width="27" height="34">
+        <use xlink:href="img/sprite.svg#html-logo"/>
+      </svg>
+    </a>
   </footer>
   <div class="modal-failure modal-failure__close">
     <div class="modal-failure__wrapper">
@@ -167,11 +179,12 @@
         <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
           опубликуем его на сайте.</p>
       </div>
-      <div class="modal-success__grey-background">
-        <button class="modal-success__submit">Закрыть окно</button>
-      </div>
+      <a class="footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="footer__made-in-text">Разработно</p>
+      </a>
     </div>
   </div>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
