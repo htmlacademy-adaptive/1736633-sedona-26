@@ -1,0 +1,68 @@
+.index-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  height: 389px;
+  padding-top: 52px;
+  background-image: url("../img/back-mobile.webp");
+  background-color: @light-blue;
+  background-repeat: no-repeat;
+  background-position: 50% 52px;
+  margin-bottom: 32px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.webp");
+    background-size: 904px auto;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 282px;
+    height: 214px;
+    background-image: url("../img/text-index-mobile.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 57px;
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/index-intro-back.webp");
+    width: 100%;
+    height: 518px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 0;
+    background-position: 50% 0;
+    margin-bottom: 48px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-intro-back@x2.webp");
+      background-size: 1200px auto;
+    }
+
+    &::before {
+      background-image: url("../img/index-intro-text.svg");
+      width: 461px;
+      height: 350px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 59px;
+  }
+}

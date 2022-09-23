@@ -1,0 +1,135 @@
+.radio-block__heading {
+  display: block;
+  font-family: @PT-Sans;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: calc(50% - 202px);
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: calc(50% - 202px);
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 45px;
+  }
+}
+
+.radio-block__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding: 0 36px;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 73px;
+  }
+}
+
+.radio-block__item {
+  font-family: @PT-Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 280px;
+  }
+
+  @media (min-width: 960px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.radio-block__input {
+  position: absolute;
+  z-index: -5;
+  transform: translateX(10px);
+  margin: 0;
+}
+
+.radio-block__input + .radio-block__label::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 16px;
+  transform: translateY(-10px);
+}
+
+.radio-block__input:hover + .radio-block__label::before {
+  background-color: @input-bg-hover;
+}
+
+.radio-block__input:active + .radio-block__label::before {
+  background-color: @input-bg-down;
+}
+
+.radio-block__input:focus + .radio-block__label::before {
+  outline: 1px solid #000000;
+  outline-offset: 1px;
+}
+
+.radio-block__input:checked + .radio-block__label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333333;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.radio-block__input:checked:active + .radio-block__label::after {
+  opacity: 0.3;
+}
+
+.radio-block__label {
+  display: inline-flex;
+  max-width: 280px;
+}

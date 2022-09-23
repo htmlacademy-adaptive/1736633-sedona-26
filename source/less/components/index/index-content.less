@@ -1,0 +1,48 @@
+.index-content__slogan {
+  margin: 0 0 32px 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/index-slogan-triangle-mob.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    width: 100%;
+    height: 57px;
+    transform: translateY(32px);
+  }
+
+  @media (min-width: 768px) {
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.index-content__slogan-definition {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 32px;
+  padding: 0 18px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+}
+
+.index-content__slogan-description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 18px;
+}

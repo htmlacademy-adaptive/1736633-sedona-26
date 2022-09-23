@@ -1,0 +1,70 @@
+.page-intro {
+  background-image: url("../img/page-intro-back-mob.webp");
+  background-color: @light-blue;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 902px auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  height: 214px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &--form {
+    @media (min-width: 1200px) {
+      margin-bottom: 115px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/page-intro-back-mob@2x.webp");
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 57px;
+    background-position: 50% 100%;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url("../img/page-intro-sedona-mob.svg");
+    background-repeat: no-repeat;
+    width: 229px;
+    height: 39px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/page-intro-back.webp");
+    background-size: 1200px auto;
+    background-position: 50% -216px;
+    margin-bottom: 64px;
+    height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-intro-back@2x.webp");
+    }
+
+    &::before {
+      background-image: url("../img/intro-text-sedona.svg");
+      height: 80px;
+      width: 460px;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 99px;
+    height: 300px;
+  }
+}
