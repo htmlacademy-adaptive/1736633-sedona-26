@@ -1,0 +1,27 @@
+.social-networks {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.social-networks__item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.social-networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @button-blue;
+  width: 48px;
+  height: 48px;
+}

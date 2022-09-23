@@ -1,0 +1,29 @@
+.like-counter__count {
+  font-family: @PT-Sans;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/like-icon.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+    padding-right: 14px;
+    transform: translateY(-4px);
+  }
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+
+    &::before {
+      background-image: url("../img/like-icon-white.svg");
+    }
+  }
+}
